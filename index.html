@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <div class="nav">
+          <nav>
+            <a href="#"><img src="images/logo.svg" alt="" /></a>
+          </nav>
+          <ul class="nav-list">
+            <nav>
+              <a href="#"
+                ><img id="logo-hidden" src="images/logo.svg" alt=""
+              /></a>
+            </nav>
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Carrers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+            <div class="close">
+              <img id="close-img" src="images/icon-close.svg" alt="" />
+            </div>
+            <div class="nav-list-links">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Carrers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <img id="hamburger-img" src="images/icon-hamburger.svg" alt="" />
+          </div>
+        </div>
+        <div class="title">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </header>
+    <div class="section-leader">
+      <img src="images/mobile/image-interactive.jpg" alt="" />
+      <div class="text">
+        <h3>The leader in interactive VR</h3>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </div>
+    <div class="section-creations">
+      <h1>Our creations</h1>
+      <div class="images">
+        <div id="a">
+          <!-- <img src="images/mobile/image-deep-earth.jpg" alt="" /> -->
+          <h3>Deep earth</h3>
+        </div>
+        <div id="b">
+          <!-- <img src="images/mobile/image-night-arcade.jpg" alt="" /> -->
+          <h3>night arcade</h3>
+        </div>
+        <div id="c">
+          <!-- <img src="images/mobile/image-soccer-team.jpg" alt="" /> -->
+          <h3>soccer team vr</h3>
+        </div>
+        <div id="d">
+          <!-- <img src="images/mobile/image-grid.jpg" alt="" /> -->
+          <h3>the grid</h3>
+        </div>
+        <div id="e">
+          <!-- <img src="images/mobile/image-from-above.jpg" alt="" /> -->
+          <h3>from up above vr</h3>
+        </div>
+        <div id="f">
+          <!-- <img src="images/mobile/image-pocket-borealis.jpg" alt="" /> -->
+          <h3>pocket borealis</h3>
+        </div>
+        <div id="g">
+          <!-- <img src="images/mobile/image-curiosity.jpg" alt="" /> -->
+          <h3>the curiosity</h3>
+        </div>
+        <div id="h">
+          <!-- <img src="images/mobile/image-fisheye.jpg" alt="" /> -->
+          <h3>make it fisheye</h3>
+        </div>
+      </div>
+      <a href="#">SEE ALL</a>
+    </div>
+    <div class="section-links">
+      <div class="links">
+        <a href=""><img src="images/logo.svg" alt="" /></a>
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Carrers</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <div class="social-media">
+          <img src="images/icon-facebook.svg" alt="" />
+          <img src="images/icon-twitter.svg" alt="" />
+          <img src="images/icon-pinterest.svg" alt="" />
+          <img src="images/icon-instagram.svg" alt="" />
+        </div>
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ricardo Costa</a>.
+    </div>
+    <script>
+      const navList = document.querySelector('.nav-list');
+      const hamburger = document.querySelector('#hamburger-img');
+      const close = document.querySelector('#close-img');
+      hamburger.addEventListener('click', function () {
+        navList.classList.add('active');
+      });
+      close.addEventListener('click', function () {
+        navList.classList.remove('active');
+      });
+    </script>
+  </body>
+</html>
